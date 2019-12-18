@@ -1,0 +1,210 @@
+*{
+  outline: none !important
+  }
+
+.App {
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  background-color: white;
+}
+
+p {  
+  font-style: normal; 
+  font-variant: normal;  
+  line-height: 20px; 
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Header */
+
+.header {
+  background-image: url('./img/bg-header.png');
+  background-position: center center;
+  background-size: cover;
+  background-color: #f1f1f1;
+  padding: 1rem 0;
+  
+}
+.header-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.backhome {
+  position: absolute;
+}
+
+.backhome a {
+  font-size: 1.1rem;
+  color: #333333;
+  padding: 1rem;
+}
+
+.backhome a:hover, .backhome a:active, .backhome a:focus {
+  color: #cc0033;
+}
+
+
+/* HiBlock */
+
+.HiBlock {
+  padding: 1rem;
+}
+.HiBlock-img {
+  width: 50%;
+  height: 50%;
+}
+
+
+/* DayPicker */
+
+.DayPicker-Month {
+  margin: 0;
+}
+
+.DayPicker-NavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ccc;
+}
+
+.Arow {
+  padding: 0 10px;
+  color: #8c939a;
+}
+
+.Arow:hover, .Arow:active, .Arow:focus {
+  color: #cc0033;
+  cursor: pointer;
+}
+
+.calendarHeader {
+  font-weight: 600;
+}
+
+.DayPicker-Body {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  background-color: #ccc;
+  grid-gap: 1px;
+}
+
+.DayPicker-Week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1px;
+}
+
+.DayPicker-Day {
+  padding: .2rem;
+  background-color: white;
+  text-align: center;
+}
+
+.DayPicker-Day:hover, .DayPicker-Day:active, .DayPicker-Day:focus   {
+  outline: 1px solid #cc0033 !important;
+  font-weight: 700;
+  color: #333333;
+  cursor: pointer;
+}
+
+.DayPicker-Day--today {
+  font-weight: 700;
+  color: #333333;
+  outline: 1px solid #cc0033;
+}
+.DayPicker-Day--outside {
+  color: #cccccc;
+}
+
+
+/* LIST */
+
+.dateBlock {
+  padding: 1rem;
+  border-bottom: 0.5px solid #e9e9e9;
+  font-weight: 600;
+}
+
+.item {
+  padding: 1rem ;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+}
+
+.item-image {
+
+  width: 30%;
+  height: 30%;
+  border-radius: 5px;
+  margin-right: 1rem;
+  -webkit-box-shadow: 10px 10px 18px -2px rgba(230,230,230,1);
+  -moz-box-shadow: 10px 10px 18px -2px rgba(230,230,230,1);
+  box-shadow: 10px 10px 18px -2px rgba(230,230,230,1);
+}
+
+.item-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  
+}
+
+.item-title {
+  margin: 0;
+}
+
+.item-year {
+  margin-top: .3rem;
+  font-size: .8rem;
+  color: #999999;
+}
+
+.sub-info-item {
+  padding: 1rem;
+  font-size: .8rem;
+  color: #999999;
+  background-color: #f5f5f5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1vw;
+}
+
+
+.showitem {
+  margin: 1rem;
+}
+
+.showitemButton {
+  background-color: white;
+  color: #999999;
+  border: 0.5px solid #e9e9e9;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.showitemButton:hover,.showitemButton:focus {
+  border-color: #cc0033;
+  color:  #cc0033;
+  cursor: pointer;
+} 
+
+.noItems {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
